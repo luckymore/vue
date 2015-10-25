@@ -87,3 +87,7 @@ extend(p, require('./api/lifecycle'))
 
 Vue.version = '1.0.0-rc.2'
 module.exports = _.Vue = Vue
+
+if (_.inBrowser) {
+  window.__VUE_DEVTOOL_HOOK__ = Vue
+}
